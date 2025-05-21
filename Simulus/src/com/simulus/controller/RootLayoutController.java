@@ -28,6 +28,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 
 import com.simulus.EditorApp;
 import com.simulus.MainApp;
@@ -85,8 +86,11 @@ public class RootLayoutController implements Initializable {
             	SimulationController.getInstance().getAnimationThread().interrupt();
 				MainApp.getInstance().stop();
 				
-				for(Stage s : StageHelper.getStages())
-					Platform.runLater(() -> s.close());
+				for (Window window : Window.getWindows()) {
+				    if (window instanceof Stage) {
+				        Platform.runLater(() -> ((Stage) window).close());
+				    }
+				}
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -115,8 +119,11 @@ public class RootLayoutController implements Initializable {
             	SimulationController.getInstance().getAnimationThread().interrupt();
 				MainApp.getInstance().stop();
 				
-				for(Stage s : StageHelper.getStages())
-					Platform.runLater(() -> s.close());
+				for (Window window : Window.getWindows()) {
+				    if (window instanceof Stage) {
+				        Platform.runLater(() -> ((Stage) window).close());
+				    }
+				}
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

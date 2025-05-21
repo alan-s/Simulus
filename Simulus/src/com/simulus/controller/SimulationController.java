@@ -80,7 +80,7 @@ public class SimulationController {
     	
     	animationThread.interrupt();
         MainApp.getInstance().resetCanvas();
-        MainApp.getInstance().getControlsController().resetCharts();
+        //MainApp.getInstance().getControlsController().resetCharts();
         MainApp.getInstance().getControlsController().resetSettings();
         setDebugFlag(false);
         truckCount = 0;

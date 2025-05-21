@@ -15,6 +15,7 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 
 import com.simulus.EditorApp;
 import com.simulus.MainApp;
@@ -476,8 +477,11 @@ public class Map extends Group {
 	            	SimulationController.getInstance().getMap().stopChildThreads();
 					MainApp.getInstance().stop();
 					
-					for(Stage s : StageHelper.getStages())
-						Platform.runLater(() -> s.close());
+					for (Window window : Window.getWindows()) {
+					    if (window instanceof Stage) {
+					        Platform.runLater(() -> ((Stage) window).close());
+					    }
+					}
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
