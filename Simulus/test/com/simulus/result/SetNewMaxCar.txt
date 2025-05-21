@@ -1,0 +1,32 @@
+FX App thread started 
+
+Simulator Button Detected 
+
+Simulator Button Clicked: true
+
+Start Button Detected 
+
+Start Button Clicked: true
+
+Initialising Test1...
+ 
+Current no of cars on the map: 23
+ 
+Max no of car on the map: 25
+ 
+Test 1 completed!
+ 
+Test scenario 1 passed: true
+ 
+Initialising Test2...
+ 
+Increased a number of cars on the map to: 40
+ 
+Current no of cars on the map: 25
+ 
+Max no of car on the map: 40
+ 
+Test 2 completed!
+ 
+Test scenario 2 passed: true
+ 

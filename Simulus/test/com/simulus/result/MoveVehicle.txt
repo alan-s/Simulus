@@ -1,0 +1,30 @@
+FX App thread started 
+
+Simulator Button Detected 
+
+Simulator Button Clicked: true
+
+Initialising Test1...
+ 
+A car is spanwed.
+ 
+Test 1 completed!
+ 
+Test scenario 1 passed: true
+ 
+Initialising Test2...
+ 
+Getting car detail on the map.
+ 
+Car has moved on the map.
+ 
+Test 2 completed!
+ 
+Test scenario 2 passed: true
+ 
+Initialising Test3...
+ 
+Test 3 completed!
+ 
+Test scenario 3 passed: true
+ 

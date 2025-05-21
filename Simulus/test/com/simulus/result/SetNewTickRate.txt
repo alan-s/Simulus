@@ -1,0 +1,24 @@
+FX App thread started 
+
+Simulator Button Detected 
+
+Simulator Button Clicked: true
+
+Start Button Detected 
+
+Start Button Clicked: true
+
+Initialising Test1...
+ 
+The current Tick time is: 50.0
+ 
+Test 1 completed!
+ 
+Test scenario 1 passed: true
+ 
+Initialising Test2...
+ 
+Test 2 completed!
+ 
+Test scenario 2 passed: true
+ 

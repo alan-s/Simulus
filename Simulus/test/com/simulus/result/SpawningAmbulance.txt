@@ -1,0 +1,34 @@
+FX App thread started 
+
+Simulator Button Detected 
+
+Simulator Button Clicked: true
+
+Start Button Detected 
+
+Start Button Clicked: true
+
+Initialising Test1...
+ 
+Spawn Ambulance Button Detected 
+
+Spawn Ambulance Button Clicked: true
+
+Test 1 completed!
+ 
+Test scenario 1 passed: true
+ 
+Initialising Test2...
+ 
+Test 2 completed!
+ 
+Test scenario 2 passed: true
+ 
+Initialising Test3...
+ 
+count is 0
+ 
+Test 3 completed!
+ 
+Test scenario 3 passed: true
+ 

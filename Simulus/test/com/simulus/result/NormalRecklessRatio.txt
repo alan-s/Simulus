@@ -1,0 +1,24 @@
+FX App thread started 
+
+Simulator Button Detected 
+
+Simulator Button Clicked: true
+
+Start Button Detected 
+
+Start Button Clicked: true
+
+Initialising Test1...
+ 
+Map reckless/Normal Ratio: 0.45
+ 
+Reckless cars on map: 7.0
+ 
+Normal Cars on map: 15.0
+ 
+Current reckless/normal Ratio 0.3181818181818182
+ 
+Test 1 completed!
+ 
+Test scenario 1 passed: true
+ 

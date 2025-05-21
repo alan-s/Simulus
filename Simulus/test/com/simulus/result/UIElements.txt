@@ -1,0 +1,50 @@
+FX App thread started 
+
+Simulator Button Detected 
+
+Simulator Button Clicked: true
+
+Initialising Test1...
+ 
+Start Button Detected 
+
+Start Button Clicked: true
+
+animationThread found: true
+ 
+thread status is alive.
+ 
+Test 1 completed!
+ 
+Test scenario 1 passed: true
+ 
+Initialising Test2...
+ 
+Debug CheckBox Detected 
+
+Debug CheckBox Clicked: true
+
+Debug CheckBox Detected 
+
+Debug CheckBox Clicked: true
+
+Debug mode is cleared
+ 
+Test2` completed!
+ 
+Test scenario 2 passed: true
+ 
+Initialising Test3...
+ 
+Reset Button Detected 
+
+Reset Button Clicked: true
+
+animationThread found: true
+ 
+thread status is reseted.
+ 
+Test 3 completed!
+ 
+Test scenario 3 passed: true
+ 

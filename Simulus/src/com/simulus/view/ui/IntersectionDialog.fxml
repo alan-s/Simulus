@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.simulus.controller.IntersectionDialogController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="87.0" prefWidth="209.0" spacing="5.0" AnchorPane.leftAnchor="15.0">
+         <children>
+            <VBox fillWidth="false" spacing="3.0">
+               <children>
+                  <Label text="North-South Phase (s)" />
+                  <HBox>
+                     <children>
+                        <Slider fx:id="nsPhaseSlider" blockIncrement="0.5" max="10.0" min="0.5" value="2.0" />
+                        <Label fx:id="nsPhaseLabel" text="2.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox spacing="3.0">
+               <children>
+                  <Label text="West-East Phase (s)" />
+                  <HBox>
+                     <children>
+                        <Slider fx:id="wePhaseSlider" blockIncrement="0.5" max="10.0" min="0.5" value="2.0" />
+                        <Label fx:id="wePhaseLabel" text="2.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

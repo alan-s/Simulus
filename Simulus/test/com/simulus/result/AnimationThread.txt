@@ -1,0 +1,14 @@
+FX App thread started 
+
+Simulator Button Detected 
+
+Simulator Button Clicked: true
+
+Initialising Test1...
+ 
+Simulation started.
+ 
+Test scenario 1 passed: false
+ 
+Test scenario 1 Failed.
+ 

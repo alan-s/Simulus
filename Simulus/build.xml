@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="complete" name="Simulus" xmlns:fx="javafx:com.sun.javafx.tools.ant">
+
+
+	<target name="compile" depends="clean">		
+		<mkdir dir="bin" />
+		<javac srcdir="src" destdir="bin"
+			source="1.8" target="1.8"
+			includeantruntime="false"
+			encoding="UTF-8" />
+
+		<!-- Copy resources -->
+		<copy todir="bin/resources">
+			<fileset dir="src/resources" />
+		</copy>
+
+		<!-- Copy non-Java files -->
+		<copy todir="bin">
+			<fileset dir="src">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="clean">
+		<delete dir="build" />
+		<delete dir="bin" />
+	</target>
+
+	<target name="jar" depends="compile" description="Builds the project and creates a runnable jar in the build folder.">
+		<property environment="env"/>
+		
+		<mkdir dir="build" />
+		<taskdef resource="com/sun/javafx/tools/ant/antlib.xml" uri="javafx:com.sun.javafx.tools.ant" classpath=".:${env.JAVA_HOME}/lib/ant-javafx.jar" />
+		<fx:jar destfile="build/Simulus.jar" verbose="true">
+			<fx:platform javafx="2.1+" j2se="8.0" />
+			<fx:application mainClass="com.simulus.Startup" />
+			<fx:fileset dir="bin" />
+		</fx:jar>
+
+		<!-- Copy resources -->
+		<copy todir="build">
+			<fileset dir="src/resources">
+				<include name="editorTutorial.pdf" />
+			</fileset>
+		</copy>
+		<copy todir="build/maps">
+			<fileset dir="src/resources/maps" />
+		</copy>
+	</target>
+
+	<target name="install" description="Copies all required files to ${user.home}/Simulus">
+		<mkdir dir="${user.home}/Simulus" />
+		<mkdir dir="${user.home}/Simulus/stats" />
+		<mkdir dir="${user.home}/Simulus/sim" />
+		
+		<copy todir="${user.home}/Simulus">
+			<fileset dir="build"/>
+		</copy>
+	</target>
+
+	<!-- Generate JavaDoc -->
+	<target name="javadoc" description="Generates the projects JavaDoc files in /javadoc.">
+		<javadoc destdir="javadoc" author="false" version="true" use="true" windowtitle="Simulus Traffic Simulation - API">
+
+			<packageset dir="src" defaultexcludes="yes" />
+
+			<doctitle>
+				<![CDATA[<h1>Simulus Traffic Simulation - API</h1>]]></doctitle>
+	</javadoc>
+</target>
+
+<target name="complete" description="Executes both the javadoc and the create_run_jar target">
+	<antcall target="jar" />
+	<antcall target="javadoc" />
+</target>
+
+
+</project>
