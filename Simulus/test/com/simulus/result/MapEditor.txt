@@ -1,6 +1,0 @@
-FX App thread started 
-
-Editor Button Detected 
-
-Editor Button Clicked: true
-
