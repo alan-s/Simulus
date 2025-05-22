@@ -3,13 +3,12 @@
 A traffic simulator, combining cellular automata with continuous
 space models, written in Java, and using the JavaFX framework for visulation.
 
-This code is a fork from [leorohr/7ccsmgpr_2015](https://github.com/leorohr/7ccsmgpr_2015) where it was originally hosted but where the contents no longer remain.
+This code is a fork from [leorohr/7ccsmgpr_2015](https://github.com/leorohr/7ccsmgpr_2015) where it was originally hosted. However, the original content is no longer available.
 
-The work was completed as part of a group project in postgraduate Masters course at King's College London, with an associated paper titled ***'Combining Cellular Automata with Continuous Space Models in Traffic Simulation'***.
+The work was completed as part of a group project for a postgraduate Master's course at King's College London, accompanied by a paper titled ***"Combining Cellular Automata with Continuous Space Models in Traffic Simulation"***.
 
-The sole contributors this work are [team_simulus/members](https://github.com/leorohr/7ccsmgpr_2015/blob/master/team_simulus/members.txt).
+The sole contributors to this work are the members of [Team Simulus](https://github.com/leorohr/7ccsmgpr_2015/blob/master/team_simulus/members.txt).
 
-![](images/simulus_01.png)
 <img src="images/simulus_01.png" width="600" height="513"/>
 
 > The main simulator app with a map loaded
