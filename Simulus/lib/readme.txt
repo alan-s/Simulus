@@ -1,0 +1,1 @@
+The JavaFX libraries required to compile and run this app are included for ease, and to confirm the version tested (javafx-sdk-24.0.1). You can always download the libraries directly from OpenJFX @ https://openjfx.io/.
