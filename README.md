@@ -14,6 +14,7 @@ The sole contributors to this work are the members of [Team Simulus](https://git
 > The traffic simulator with a map loaded
 
 <img src="images/simulus_02.png" width="600" height="498"/>
+
 > The map editor allowing construction of custom maps
 
 **Features**
