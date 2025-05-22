@@ -1,6 +1,6 @@
 # Simulus
 
-A traffic simulator, combining cellular automata with continuous
+A traffic simulator combining cellular automata with continuous
 space models, written in Java, and using the JavaFX framework for visulation.
 
 This code is a fork from [leorohr/7ccsmgpr_2015](https://github.com/leorohr/7ccsmgpr_2015) where it was originally hosted. However, the original content is no longer available.
@@ -11,7 +11,7 @@ The sole contributors to this work are the members of [Team Simulus](https://git
 
 <img src="images/simulus_01.png" width="600" height="513"/>
 
-> The main simulator app with a map loaded
+> The traffic simulator with a map loaded
 
 <img src="images/simulus_02.png" width="600" height="498"/>
 > The map editor allowing construction of custom maps
@@ -29,18 +29,18 @@ The sole contributors to this work are the members of [Team Simulus](https://git
 
 ## Why
 
-I was curious to revist the project, and having spent several hours fixing deprecated code, and not being able to get Ant build working, I thought I'd upload a working version for anyone else interested in this domain.
+I was curious to revist the project, and after fixing deprecated code, but not being able to get Ant build working, I thought I'd upload a working version for anyone else interested in this domain.
 
 ## Running Simulus
 I've included a packaged Jar file and the JavaFX library required to run it. You can always compile the source yourself.
 
-Assuming you have Java runtime on your machine, and have navigated to the simulus root directory, then run in your shell:
+Assuming you have the Java runtime on your machine, and have navigated to the simulus root directory, then in your shell run:
 
 `$ java --module-path lib/lib --add-modules javafx.controls,javafx.fxml -jar bin/simulus.jar`
 
 ## Building Simulus
 
-Assuming you have Java SDK on your machine, and have navigated to the simulus root directory, then run in your shell:
+Assuming you have the Java SDK on your machine, and have navigated to the simulus root directory, then in your shell run:
 
 `javac -d bin -cp "lib/lib/*" $(find src -name "*.java")`
 
@@ -48,4 +48,4 @@ To then run the compiled application:
 
 `javaw --module-path "lib/lib" --add-modules javafx.controls,javafx.fxml -classpath "bin;lib/lib/javafx.base.jar;lib/lib/javafx.controls.jar;lib/lib/javafx.fxml.jar;lib/lib/javafx.graphics.jar;lib/lib/javafx.media.jar;lib/lib/javafx.swing.jar;lib/lib/javafx.web.jar;lib/lib/javafx-swt.jar;lib/lib/jdk.jsobject.jar;lib/lib/jfx.incubator.input.jar;lib/lib/jfx.incubator.richtext.jar" com.simulus.Startup")`
 
-Note: you'll need to copy the **"resources"** folder from **"/src"** to your build directory e.g. **"/bin"**
+Note: you'll need to copy the **"resources"** folder from **"/src"** to your build directory e.g. **"/bin"** when running the compiled code.
