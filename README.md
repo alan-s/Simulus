@@ -1,7 +1,7 @@
 # Simulus
 
 A traffic simulator combining cellular automata with continuous
-space models, written in Java, and using the JavaFX framework for visulation.
+space models, written in Java, and using the JavaFX framework for visualisation.
 
 This code is a fork from [leorohr/7ccsmgpr_2015](https://github.com/leorohr/7ccsmgpr_2015) where it was originally hosted. However, the original content is no longer available.
 
@@ -30,7 +30,7 @@ The sole contributors to this work are the members of [Team Simulus](https://git
 
 ## Why
 
-I was curious to revist the project, and after fixing deprecated code, but not being able to get Ant build working, I thought I'd upload a working version for anyone else interested in this domain.
+I was curious to revisit the project, and after fixing deprecated code, but not being able to get Ant build working, I thought I'd upload a working version for anyone else interested in this domain.
 
 ## Running Simulus
 I've included a packaged Jar file and the JavaFX library required to run it. You can always compile the source yourself.
